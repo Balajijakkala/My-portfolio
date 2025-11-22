@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Balaji — Portfolio</title>
+
     <!-- CSS Link -->
     <link rel="stylesheet" href="styles.css" />
     <!-- Font Awesome -->
@@ -28,22 +29,44 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button class="nav-toggle" aria-label="toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-      <div class="hero-content">
-        <h1>Hi, I'm <span class="highlight">Balaji</span></h1>
-        <p class="typing-text">Full Stack Developer</p>
-        <p class="hero-description">Crafting Digital Experiences</p>
-        <div class="cta-buttons">
-          <a
-            href="My Resume.pdf"
-            class="btn primary-btn"
-            target="_blank"
-            >View Resume</a
-          >
-          <a href="#contact" class="btn secondary-btn">Contact Me</a>
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1>Hi, I'm <span class="highlight">Balaji</span></h1>
+          <p class="typing-text">Full Stack Developer</p>
+          <p class="hero-description">
+            Crafting clean, responsive web apps with a focus on user experience
+            and performance.
+          </p>
+          <div class="cta-buttons">
+            <a href="My Resume.pdf" class="btn primary-btn" target="_blank"
+              >View Resume</a
+            >
+            <a href="#contact" class="btn secondary-btn">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-stats">
+            <div>
+              <strong>5+</strong>
+              <span>Projects</span>
+            </div>
+            <div>
+              <strong>2k+</strong>
+              <span>Hours Coding</span>
+            </div>
+            <div>
+              <strong>1</strong>
+              <span>Focus: React & Java</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -52,26 +75,26 @@
     <section id="about" class="about">
       <h2 class="section-title">About Me</h2>
       <div class="about-content">
-        <div class="about-text">
-          <p class="about-intro">
-            I'm a passionate Full Stack Developer focused on creating innovative
-            and efficient web solutions.
-          </p>
-          <div class="about-details">
-            <div class="about-card">
-              <h3><i class="fas fa-laptop-code"></i> Technical Expertise</h3>
-              <p>
-                Specialized in building responsive web applications using modern
-                technologies and best practices.
-              </p>
-            </div>
-            <div class="about-card">
-              <h3><i class="fas fa-bullseye"></i> Professional Focus</h3>
-              <p>
-                Dedicated to creating user-friendly applications and solving
-                complex problems with elegant solutions.
-              </p>
-            </div>
+        <p class="about-intro">
+          I'm a passionate Full Stack Developer focused on creating innovative
+          and efficient web solutions. I enjoy building UI with React and
+          backend services with Spring Boot.
+        </p>
+
+        <div class="about-details">
+          <div class="about-card">
+            <h3><i class="fas fa-laptop-code"></i> Technical Expertise</h3>
+            <p>
+              Building responsive web applications using modern technologies and
+              best practices.
+            </p>
+          </div>
+          <div class="about-card">
+            <h3><i class="fas fa-bullseye"></i> Professional Focus</h3>
+            <p>
+              Creating user-friendly applications and solving complex problems
+              with elegant solutions.
+            </p>
           </div>
         </div>
       </div>
@@ -86,40 +109,47 @@
           <h3>HTML5</h3>
           <p>Semantic Markup, Accessibility</p>
         </div>
+
         <div class="skill-card">
           <i class="fab fa-css3-alt"></i>
           <h3>CSS3</h3>
           <p>Flexbox, Grid, Animations</p>
         </div>
+
         <div class="skill-card">
           <i class="fab fa-js"></i>
           <h3>JavaScript</h3>
           <p>ES6+, DOM, Async/Await</p>
         </div>
+
+        <div class="skill-card">
+          <i class="fab fa-react"></i>
+          <h3>React</h3>
+          <p>Components, Hooks, State Management</p>
+        </div>
+
         <div class="skill-card">
           <i class="fab fa-java"></i>
           <h3>Java</h3>
           <p>Core Java, OOP</p>
         </div>
+
         <div class="skill-card">
           <i class="fas fa-database"></i>
           <h3>SQL</h3>
           <p>Database Design, Queries</p>
         </div>
+
+        <div class="skill-card">
+          <i class="fas fa-leaf"></i>
+          <h3>Spring Boot</h3>
+          <p>REST APIs, MVC</p>
+        </div>
+
         <div class="skill-card">
           <i class="fas fa-brain"></i>
           <h3>Problem Solving</h3>
           <p>DSA, Logical Thinking</p>
-        </div>
-        <div class="skill-card">
-          <i class="fas fa-leaf"></i>
-          <h3>Spring Framework</h3>
-          <p>Spring Boot, MVC, REST APIs</p>
-        </div>
-        <div class="skill-card">
-          <i class="fas fa-cogs"></i>
-          <h3>Hibernate</h3>
-          <p>ORM, HQL, Annotations</p>
         </div>
       </div>
     </section>
@@ -127,7 +157,43 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
       <h2 class="section-title">My Projects</h2>
+
       <div class="projects-container">
+        <!-- Existing Project 1 -->
+
+        <!-- New Project: Menu Card (React) -->
+        <div class="project-card featured">
+          <div class="project-image">
+            <img src="menu card.jpg.png" alt="Menu Card (React)" />
+          </div>
+          <div class="project-info">
+            <h3>Menu Card (React)</h3>
+            <p>
+              A responsive menu card built with React. Features dynamic
+              categories, add-to-cart, and animated card transitions. Great as a
+              component for food apps or restaurants.
+            </p>
+            <div class="tech-stack">
+              <span>React</span>
+              <span>CSS Modules</span>
+            </div>
+            <div class="project-links">
+              <!-- Replace these with your real links -->
+              <a
+                href="https://balajijakkala.github.io/React-Project/"
+                class="btn"
+                target="_blank"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/Balajijakkala?tab=repositories"
+                class="btn"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
         <div class="project-card">
           <div class="project-image">
             <img src="balaji's logo.jpg" alt="Food Application" />
@@ -135,24 +201,65 @@
           <div class="project-info">
             <h3>Online Food Ordering Application</h3>
             <p>
-              A dynamic food ordering platform with features such as restaurant
-              listing, menu browsing, cart management, and order tracking.
+              A dynamic food ordering platform with restaurant listings, menus,
+              cart management and order tracking. Backend with Java + MySQL.
             </p>
             <div class="tech-stack">
               <span>HTML</span>
               <span>CSS</span>
               <span>Java</span>
-              <span>MySOL</span>
+              <span>MySQL</span>
             </div>
             <div class="project-links">
               <a href="http://localhost:7973/FoodApplication/" class="btn"
                 >Live Demo</a
               >
-              <a href="#" class="btn">GitHub</a>
+              <a
+                href="https://github.com/Balajijakkala?tab=repositories"
+                class="btn"
+                >GitHub</a
+              >
             </div>
           </div>
         </div>
 
+        <!-- New Project: Festival Invitation Card (React) -->
+        <div class="project-card">
+          <div class="project-image">
+            <img
+              src="festicard.jpg.png"
+              alt="Festival Invitation Card (React)"
+            />
+          </div>
+          <div class="project-info">
+            <h3>Festival Invitation Card (React)</h3>
+            <p>
+              Interactive festival invitation built in React — includes animated
+              entrance, RSVP modal, and share options. Designed to be easily
+              customized for different events.
+            </p>
+            <div class="tech-stack">
+              <span>React</span>
+              <span>Responsive</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://balajijakkala.github.io/Festival-Card/"
+                class="btn"
+                target="_blank"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/Balajijakkala?tab=repositories"
+                class="btn"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Existing Project 2 -->
         <div class="project-card">
           <div class="project-image">
             <img src="card.jpg.png" alt="Card Flip Project" />
@@ -160,7 +267,7 @@
           <div class="project-info">
             <h3>Flipping Card Animation</h3>
             <p>
-              A creative card flip animation using only HTML and CSS, great for
+              Creative card flip animation using only HTML and CSS — great for
               portfolios and interactive UI designs.
             </p>
             <div class="tech-stack">
@@ -168,7 +275,7 @@
               <span>CSS</span>
             </div>
             <div class="project-links">
-              <a href="http://127.0.0.1:5500/index.html" class="btn"
+              <a href="https://balajijakkala.github.io/Card/" class="btn"
                 >Live Demo</a
               >
               <a href="https://github.com/Balajijakkala/Card.git" class="btn"
@@ -193,7 +300,9 @@
               <span>CSS</span>
             </div>
             <div class="project-links">
-              <a href="http://127.0.0.1:5500/lo.html" class="btn">Live Demo</a>
+              <a href="https://balajijakkala.github.io/Login/" class="btn"
+                >Live Demo</a
+              >
               <a href="https://github.com/Balajijakkala/Login.git" class="btn"
                 >GitHub</a
               >
@@ -235,7 +344,16 @@
     </section>
 
     <footer>
-      <p>&copy; 2025 Your Portfolio. All rights reserved.</p>
+      <p>&copy; 2025 Balaji Jakkala. All rights reserved.</p>
     </footer>
+
+    <script>
+      // Simple nav toggle for small screens
+      const toggle = document.querySelector(".nav-toggle");
+      const navLinks = document.querySelector(".nav-links");
+      toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+      });
+    </script>
   </body>
 </html>
